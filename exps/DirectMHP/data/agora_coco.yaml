@@ -1,0 +1,13 @@
+
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+path: ../AGORA/H_B/
+labels: euler_head_yolov5_labels_coco
+train: euler_head_yolov5_labels_coco/img_txt/train.txt
+val: euler_head_yolov5_labels_coco/img_txt/validation.txt
+
+train_annotations: annotations/full_body_head_coco_style_train.json
+val_annotations: annotations/full_body_head_coco_style_validation.json
+
+nc: 1  # number of classes (only one class: human head)
+num_angles: 3  # number of angles is 3
+names: [ 'person' ]  # class names. We still use 'person' in json file

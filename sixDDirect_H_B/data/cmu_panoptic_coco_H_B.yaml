@@ -1,0 +1,13 @@
+
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+path: ../CMU/H_B/
+labels: 6D_body_head_yolov5_labels_coco
+train: 6D_body_head_yolov5_labels_coco/img_txt/train.txt
+val: 6D_body_head_yolov5_labels_coco/img_txt/val.txt
+
+train_annotations: annotations/coco_style_sampled_train.json
+val_annotations: annotations/coco_style_sampled_validation.json # for both heads and bodies
+
+nc: 2  # number of classes (two classes: human head and body)
+num_rot: 6  # number of rotation args model output (6D representation)
+names: [ "head", "body" ]  # class names
